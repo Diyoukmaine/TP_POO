@@ -1,5 +1,5 @@
 from sklearn.preprocessing import LabelEncoder
-import joblib
+
 
 def preprocess_data(df):
     # Identifier les colonnes catégorielles (type object)
@@ -24,16 +24,4 @@ def preprocess_data(df):
     y = le.fit_transform(y)
 
     return X, y
-
-# from sklearn.preprocessing import LabelEncoder
-
-# def preprocess_data(df):
-#     # Supposons que la colonne cible s'appelle 'Disease'
-#     X = df.drop(columns=['Diagnosis'])
-#     y = df['Diagnosis']
-
-#     # Encoder la cible en numérique
-#     le = LabelEncoder()
-#     y = le.fit_transform(y)
-
-#     return X, y
+    
