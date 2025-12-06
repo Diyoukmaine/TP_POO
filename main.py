@@ -1,6 +1,6 @@
 from pipeline.trainer import train_model
 from pipeline.evaluate import evaluate
-from core.logistic_regression import LogisticRegressionModel
+
 
 if __name__ == "__main__":
     model, X_test, y_test = train_model()
