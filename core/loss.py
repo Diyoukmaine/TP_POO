@@ -20,5 +20,3 @@ def compute_accuracy(y_true, y_pred):
     acc = np.mean(y_true == y_pred)
     print(f"✅ Accuracy : {acc:.2f}")
     return acc
-
-
