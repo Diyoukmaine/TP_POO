@@ -13,7 +13,7 @@ def preprocess_data(df):
     for col in categorical_cols:
         le_col = LabelEncoder()
         df[col] = le_col.fit_transform(df[col])
-        #joblib.dump(le_col, f"encoder_{col}.pkl")
+        # joblib.dump(le_col, f"encoder_{col}.pkl")
 
     # Maintenant qu'on a tout encodé :
     X = df.drop(columns=['Diagnosis'])
@@ -24,4 +24,3 @@ def preprocess_data(df):
     y = le.fit_transform(y)
 
     return X, y
-    
