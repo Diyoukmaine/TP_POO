@@ -1,6 +1,6 @@
 from sklearn.linear_model import LogisticRegression
 from core.model import Model
-from sklearn.preprocessing import StandardScaler
+
 
 class LogisticRegressionModel(Model):
     def __init__(self):
