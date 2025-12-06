@@ -3,7 +3,6 @@ from core.dataset import load_dataset
 from sklearn.model_selection import train_test_split
 
 
-
 def train_model():
     X, y = load_dataset("data/disease_diagnosis.csv")
     X_train, X_test, y_train, y_test = train_test_split(
